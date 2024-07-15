@@ -60,7 +60,10 @@
                             <div class="w-2 h-2"></div><span class="auto-type text-4xl font-bold text-teal-500"></span>
                         </h3>
                         <p class="mt-2 text-teal-500 leading-relaxed">
-                            Memiliki minat dalam UI/UX dan pemrograman, dengan pengalaman 7 bulan sebagai Desainer UI/UX dan kurang lebih 3 bulan bulan sebagai pengembang frontend. Terbiasa dengan metode Desain UX, tipografi, pengujian UX, pemrograman dasar, serta framework. Memiliki disiplin diri yang tinggi, perhatian terhadap detail, dan konsistensi
+                            Memiliki minat dalam UI/UX dan pemrograman, dengan pengalaman 7 bulan sebagai Desainer UI/UX
+                            dan kurang lebih 3 bulan bulan sebagai pengembang frontend. Terbiasa dengan metode Desain
+                            UX, tipografi, pengujian UX, pemrograman dasar, serta framework. Memiliki disiplin diri yang
+                            tinggi, perhatian terhadap detail, dan konsistensi
                         </p>
                     </div>
                     <div class="flex space-x-4">
@@ -288,7 +291,7 @@
     <!-- education end -->
 
     <!-- portfolio start -->
-    <section id="portfolio" class="font-Inter max-w-full lg:py-28 lg:px-24">
+    <section id="portfolio" class="font-Inter max-w-full lg:pt-28 lg:px-24">
         <div class="container mx-auto">
             <div class="mb-16 text-center">
                 <div class="inline-block">
@@ -296,10 +299,24 @@
                     <span class="block w-auto bg-slate-400 h-0.5 my-4"></span>
                 </div>
             </div>
+            <!-- filter button -->
+            <div class="container relative w-max mb-12 ">
+                <div class="container flex space-x-2 filter_button">
+                    <button class="py-1 px-4 bg-white border border-slate-400 rounded-md" data-name="all">All</button>
+                    <button class="py-1 px-4 bg-white border border-slate-400 rounded-md" data-name="uiux">UI/UX
+                        Design</button>
+                    <button class="py-1 px-4 bg-white border border-slate-400 rounded-md"
+                        data-name="web">Website</button>
+                    <button class="py-1 px-4 bg-white border border-slate-400 rounded-md"
+                        data-name="mobile">Mobile</button>
+                    <button class="py-1 px-4 bg-white border border-slate-400 rounded-md"
+                        data-name="testing">Testing</button>
+                </div>
+            </div>
+            <!-- card/item -->
             <div class="max-w-full mb-12">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
-                    
-                    <div class="w-full">
+                    <div class="w-full item" data-category="uiux">
                         <a href="https://pyrite-challenge-7c5.notion.site/CinemaGO-e2f5fe55cdf74158a64b49e295cb302b"
                             target="_blank" rel="noopener noreferrer">
                             <div class="h-28 border shadow-md rounded-md overflow-hidden mx-auto relative group">
@@ -315,7 +332,7 @@
                         </a>
                         <p class="text-xs text-slate-500 mt-2">CinemaGo: Movie App Research & Design</p>
                     </div>
-                    <div class="w-full">
+                    <div class="w-full item" data-category="uiux">
                         <a href="https://pyrite-challenge-7c5.notion.site/Company-Profile-Website-fb03c4423a2c401dbe25d92770465ae0"
                             target="_blank" rel="noopener noreferrer">
                             <div class="h-28 border shadow-md rounded-md overflow-hidden mx-auto relative group">
@@ -331,9 +348,8 @@
                         </a>
                         <p class="text-xs text-slate-500 mt-2">DigitalPro UI/UX Design</p>
                     </div>
-                    <div class="w-full">
-                        <a href="https://rasyiqal.github.io/lazada_lp/"
-                            target="_blank" rel="noopener noreferrer">
+                    <div class="w-full item" data-category="web">
+                        <a href="https://rasyiqal.github.io/lazada_lp/" target="_blank" rel="noopener noreferrer">
                             <div class="h-28 border shadow-md rounded-md overflow-hidden mx-auto relative group">
                                 <div
                                     class="absolute p-4 flex inset-0 group-hover:bg-teal-600 group-hover:opacity-90 items-center justify-center transition duration-300">
@@ -347,7 +363,23 @@
                         </a>
                         <p class="text-xs text-slate-500 mt-2">Redesign & Developed Lazada Landing Page</p>
                     </div>
-                    <div class="w-full">
+                    <div class="w-full item" data-category="uiux">
+                        <a href="https://pyrite-challenge-7c5.notion.site/Eduwork-abfe000671254e8e8c2135dbb44d2961"
+                            target="_blank" rel="noopener noreferrer">
+                            <div class="h-28 border shadow-md rounded-md overflow-hidden mx-auto relative group">
+                                <div
+                                    class="absolute p-4 flex inset-0 group-hover:bg-teal-600 group-hover:opacity-90 items-center justify-center transition duration-300">
+                                    <p
+                                        class="text-white text-center opacity-0 group-hover:opacity-100 font-semibold duration-300">
+                                        Internship - Eduwork
+                                    </p>
+                                </div>
+                                <img class="w-full h-full object-cover" src="src/img/edd.jpg" alt="">
+                            </div>
+                        </a>
+                        <p class="text-xs text-slate-500 mt-2">Internship-Task Preview:Eduwork</p>
+                    </div>
+                    <div class="w-full item" data-category="testing">
                         <a href="https://pyrite-challenge-7c5.notion.site/API-Test-with-Postman-35b0ee6b7d264e6f9ab14c0039795272"
                             target="_blank" rel="noopener noreferrer">
                             <div class="h-28 border shadow-md rounded-md overflow-hidden mx-auto relative group">
@@ -382,7 +414,6 @@
         </div>
     </section>
     <!-- portfolio end -->
-
 
     <!-- contact start-->
     <section id="contact" class="max-w-full lg:py-28 lg:px-24">
@@ -513,7 +544,46 @@
     </script>
 
 
-    <script src="./src/js/script.js">
+    <script src="./src/js/script.js"></script>
+    <script>
+        //filter
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.filter_button button');
+            const items = document.querySelectorAll('.item');
+            const defaultButton = document.querySelector('.filter_button button[data-name="all"]');
+
+            // Function to set the active button
+            function setActiveButton(button) {
+                buttons.forEach(btn => {
+                    btn.classList.remove('bg-teal-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-black');
+                });
+                button.classList.remove('bg-white', 'text-black');
+                button.classList.add('bg-teal-600', 'text-white');
+            }
+
+            // Function filter items
+            function filterItems(category) {
+                items.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            }
+            // Event listener for each button
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.getAttribute('data-name');
+                    filterItems(category);
+                    setActiveButton(button);
+                });
+            });
+            // Initialize the default button
+            filterItems('all');
+            setActiveButton(defaultButton);
+        });
     </script>
 </body>
 
