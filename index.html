@@ -7,6 +7,8 @@
     <title>Portfolio Rasyiqal</title>
     <link href="./src/output.css" rel="stylesheet">
     <link rel="shortcut icon" type="x-icon" href="src/img/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
 <body>
@@ -87,7 +89,7 @@
     <!-- hero end -->
 
     <!-- skill start -->
-    <section class="font-Inter max-w-full mx-auto pt-24 lg:px-24">
+    <section class="font-Inter max-w-full mx-auto pt-24 lg:px-24" data-aos="fade-up" data-aos-duration="600">
         <div class="container">
             <div class="mb-16 text-center">
                 <div class="inline-block">
@@ -178,7 +180,7 @@
     <!-- skill end -->
 
     <!-- education start -->
-    <section id="education" class="font-Inter max-w-full pt-24 lg:px-24">
+    <section id="education" class="font-Inter max-w-full pt-24 lg:px-24" data-aos="fade-up" data-aos-duration="600">
         <div class="container mx-auto">
             <div class="mb-16 text-center">
                 <div class="inline-block">
@@ -291,7 +293,7 @@
     <!-- education end -->
 
     <!-- portfolio start -->
-    <section id="portfolio" class="font-Inter max-w-full lg:pt-24 lg:px-24">
+    <section id="portfolio" class="font-Inter max-w-full lg:pt-24 lg:px-24" data-aos="fade-up" data-aos-duration="600">
         <div class="container mx-auto">
             <div class="mb-16 text-center">
                 <div class="inline-block">
@@ -412,6 +414,22 @@
                         </a>
                         <p class="text-xs text-slate-500 mt-2">3D Modelling with Blender</p>
                     </div>
+                    <div class="w-full item" data-category="web">
+                        <a href="https://pyrite-challenge-7c5.notion.site/Landing-Page-Builder-Wordpress-26940a685ce143da8c393bc746045dc7"
+                            target="_blank" rel="noopener noreferrer">
+                            <div class="h-28 border shadow-md rounded-md overflow-hidden mx-auto relative group">
+                                <div
+                                    class="absolute p-4 flex inset-0 group-hover:bg-teal-600 group-hover:opacity-90 items-center justify-center transition duration-300">
+                                    <p
+                                        class="text-white text-center opacity-0 group-hover:opacity-100 font-semibold duration-300">
+                                        Wordpress: Travel Landing Page
+                                    </p>
+                                </div>
+                                <img class="w-full h-full object-cover" src="src/img/landing.png" alt="">
+                            </div>
+                        </a>
+                        <p class="text-xs text-slate-500 mt-2">Landing Page Builder with Wordpress</p>
+                    </div>
                 </div>
             </div>
 
@@ -433,7 +451,7 @@
     <!-- portfolio end -->
 
     <!-- contact start-->
-    <section id="contact" class="max-w-full lg:pt-24 lg:px-24 sm:px-12">
+    <section id="contact" class="max-w-full lg:pt-24 lg:px-24 sm:px-12" data-aos="fade-up" data-aos-duration="600">
         <div class="mb-16 text-center">
             <div class="inline-block">
                 <h2 class="text-3xl font-semibold">Contact</h2>
@@ -603,6 +621,10 @@
         });
     </script>
 
+    <!-- animating -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
