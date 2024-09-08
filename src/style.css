@@ -1,0 +1,16 @@
+.education-list li {
+    margin-left: 1em;
+    padding-left: 0.5em;
+}
+
+.education-list li::before {
+    content: '•'; /* Ubah titik list ke simbol lain jika diperlukan */
+    margin-left: -1em; /* Untuk mengatur jarak antara simbol dan teks */
+    margin-right: 0.5em; /* Jarak antara simbol dan teks */
+    color: #888; /* Warna titik */
+}
+
+.navbar-scrolled {
+    background-color: #ffffff; /* White color for when scrolled */
+    backdrop-filter: blur(25px); /* Optional: Adds a blur effect */
+}
